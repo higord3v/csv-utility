@@ -6,6 +6,6 @@ const controller = new CsvController();
 const router = Router();
 
 router.post("/files", upload.single("file"), controller.upload);
-router.get("/users", upload.single("file"), controller.indexOne);
+router.get("/users", controller.indexOne);
 
 export { router };
